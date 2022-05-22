@@ -1,0 +1,111 @@
+.cardImage
+{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.cardName
+{
+
+    text-align: center;
+    margin: 15px 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card
+{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .7);
+}
+/* .cardLoc
+{
+    
+} */
+
+ul.card-list {
+    vertical-align: top;
+    padding: 0;
+    margin: 1em;
+    text-align: left;
+    border-radius: 5% 5% 0 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+ul.card-list > li h1 {
+  padding: .25em .5em;
+  margin: 0;
+  text-align: center;
+}
+
+ul.card-list section {
+  height: 200px;
+}
+
+ul.card-list .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0 1em;
+  top: 0;
+  text-align: initial;
+  overflow-y: auto;
+  color: #ffffff;
+  background: rgba(0, 0, 0, .7);
+  box-sizing: border-box;
+  transform: translateY(-100%);
+  transition: transform .5s ease;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+ul.card-list > li:hover .content {
+  position: absolute;
+  padding: 0 1em;
+  transform: translateY(0);
+}
+
+ul.card-list > li section {
+  position: relative;
+  overflow: hidden;
+}
+
+ul.card-list img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+  }
