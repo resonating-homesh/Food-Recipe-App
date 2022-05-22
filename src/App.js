@@ -1,5 +1,4 @@
 import './App.css';
-import { Axios } from 'axios';
 import axios from "axios";
 import { useState } from 'react';
 import Grid from './Grid';
@@ -12,6 +11,8 @@ function App() {
   const [pre, setPre] = useState(true);
   const [test, setTest] = useState(false);
 
+  const apiKey = process.env.REACT_APP_APIKEY;
+
   const options = {
     method: 'GET',
     url: 'https://tasty.p.rapidapi.com/recipes/list',
@@ -20,7 +21,7 @@ function App() {
     q: query},
     headers: {
       'X-RapidAPI-Host': 'tasty.p.rapidapi.com',
-      'X-RapidAPI-Key': '6a70f37b5dmsh66ea700b1675d79p13405djsn02ef84b46652'
+      'X-RapidAPI-Key': apiKey,
     }
   }
   
@@ -57,9 +58,9 @@ function App() {
 
  function checkClass (loading, pre)
  {
-    if (loading  == false)
+    if (loading  === false)
     {
-      if (pre == true)
+      if (pre === true)
       {
         return "";
       }
