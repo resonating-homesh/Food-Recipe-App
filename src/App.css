@@ -1,9 +1,6 @@
 .app {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
-
 }
 
 .loader {
@@ -43,7 +40,6 @@
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 20px;
-  /* background: transparent; */
   border: 2px solid white;
   border-radius: 10px;
   color: black;
@@ -74,7 +70,6 @@
   color: #FFFFFF;
   cursor: pointer;
   box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, .8);
-  /* box-shadow: 2px 2px 0px 0px rgba(0,0,0,.8) inset; */
 }
 
 .btn:hover {
@@ -82,7 +77,6 @@
 }
 
 .grid {
-  /* margin-top: 30px; */
   padding-top: 3%;
   padding-bottom: 3%;
   display: grid;
@@ -119,10 +113,37 @@
   align-self: center;
 }
 
+.btnSection
+{
+  display: flex;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 30px;
+  justify-content: space-between;
+  background-color: #ffbc0d;
+}
+
+.Btn
+{
+  background-color: #da291c ;
+  color: white;
+  font-size: 15px;
+  border: 0;
+  border-radius: 10px;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px 2px grey;
+}
+
+.Btn:hover
+{
+  box-shadow: 0px 0px 0px 0px grey;
+}
+
 @media (max-width: 1350px)  {
 
   .grid {
-    /* margin-top: 30px; */
     padding-top: 3%;
     padding-bottom: 3%;
     display: grid;
@@ -138,7 +159,6 @@
 @media (max-width: 1000px)  {
 
   .grid {
-    /* margin-top: 30px; */
     padding-top: 3%;
     padding-bottom: 3%;
     display: grid;
@@ -154,7 +174,6 @@
 @media (max-width: 650px)  {
 
   .grid {
-    /* margin-top: 30px; */
     padding-top: 3%;
     padding-bottom: 3%;
     display: grid;
@@ -178,6 +197,12 @@
   height: 400px;
   align-self: center;
 }
+.pageIndicator
+{
+  color: white;
+  font-weight: 600;
+}
+
 .nullText
 {
   font-size: 20px;
@@ -189,7 +214,6 @@
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 20px;
-  /* background: transparent; */
   border: 2px solid white;
   border-radius: 10px;
   color: black;
